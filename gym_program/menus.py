@@ -6,7 +6,7 @@ class Menu:
               1. catalogo
               2. Registro de ingresos por mes
               3. tercera opcion que no tengo muy clara 
-              4. pruebas :)
+              4. unir cliente con instructor
               5. salir del programa\n""")
         
     def subMenu1():
