@@ -7,16 +7,7 @@ I = Instructor()
 C = Cliente()
 A = AdminGYM()
 
-def UnirInstrucorAcliente():
-    print('has entrado a python')
-    instructor_id = str(input("ingrese el Id del instructor"))
-    instructor = I.getInstructor(instructor_id)
-    id_cliente = str(input("ingrese el Id del cliente"))
-    cliente = C.getCliente(id_cliente)
-    id_unit = str(input("ingrese el id del conjunto"))
-    A.addClienteAInstructor(instructor,cliente,id_unit)
-    print('¡se ha guardado todo!')
-     
+
 # menu del sistema!2
 while True: 
     try:
@@ -113,7 +104,7 @@ while True:
                     userValue = int(input("ingrese la opcion: "))
                     if userValue == 1:
                         print("has seleccionado unir instructor con cliente\n")
-                        UnirInstrucorAcliente()
+                        A.UnirInstrucorAcliente()
                     elif userValue == 2:
                         print("ver lista de instructor con su cliete")
                         A.printCliente_y_instructor()

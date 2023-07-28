@@ -14,6 +14,15 @@ class AdminGYM:
         self.instructor_clientes[id_unit]['instructor'] = instructor
         self.instructor_clientes[id_unit]['cliente'] = cliente
         
+    def UnirInstrucorAcliente(self):
+        print('has entrado a python')
+        instructor_id = str(input("ingrese el Id del instructor"))
+        instructor = Instructor.getInstructor(instructor_id)
+        id_cliente = str(input("ingrese el Id del cliente"))
+        cliente = Cliente.getCliente(id_cliente)
+        id_unit = str(input("ingrese el id del conjunto"))
+        self.addClienteAInstructor(instructor,cliente,id_unit)
+        print('¡se ha guardado todo!')
         
         
     def printCliente_y_instructor(self):
